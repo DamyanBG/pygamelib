@@ -4914,3 +4914,8 @@ class Screen(base.PglBaseObject):
         before the next update.
         """
         self._is_dirty = True
+
+
+class ExtendableBoard:
+    def __init__(self, max_width) -> None:
+        self.max_width = max_width
